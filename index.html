@@ -5,54 +5,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Portfolio</title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/2d50f2bce1.js"
-                crossorigin="anonymous"></script>
+
+        <script src="kitfont.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
-        <!-- Header-start -->
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="images/logo.png" alt="" class="logo">
-                    <ul id="sidemenu">
-                        <li>
-                            <a href="#header">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        <!-- nav start -->
+        <nav>
+            <div class="container nav-container">
+                <a href="" class="logo">port<span>folio</span></a>
 
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                </nav>
-                <div class="header-text">
-                    <p>FullStack Developer</p>
-                    <h1>
-                        Hello, I'm <span>Dinesh Magar</span>
-                        <br>
-                        from Kathmandu
-                    </h1>
+                <ul class="nav-links" id="sidemenu">
+                    <li class="nav-item">
+                        <a href="#header" class="active nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+        <!-- nav end -->
+
+        <!-- start header -->
+        <header id="header">
+            <div class="container header-container">
+                <div class="header-left">
+                    <h3>Web Developer</h3>
+                    <h1>Hello, I'm Dinesh Magar</h1>
+                    <p>
+                        a fresh graduate in Bsc.CSIT from Kathmandu College with 1+ years of experience in web development as front-end as well as back-end developer.
+                    </p>
+ 
+ 
+ 
+                    <a href="#contact" class="bbtns">Contact Me</a>
+                </div>
+                <div class="header-right">
+                    <!-- <div class="circle">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                        
+                    </div> -->
+                    <div class="hero-image">
+                        <img src="images/background1.png" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Header-End -->
+        </header>
+        <!-- end header -->
+ 
+
         <!-- About-start -->
         <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/user.png" alt="">
+                        <img src="images/user2.png" alt="">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
@@ -60,7 +85,7 @@
                             I am a passionate and versatile full stack developer with a strong foundation in both front-end and back-end technologies. With 1+ years of experience in the field, I thrive on solving complex problems and delivering robust solutions that exceed client expectations.
                         </p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('experiences')">Experience</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
 
@@ -70,17 +95,18 @@
                                 <li>
                                     <span>Web Designing</span>
                                     <br>
-                                    Using HTML, CSS, JS, Bootstrap
+                                    HTML, CSS, JS, Bootstrap, Figma
+                                </li>
+ 
+                                <li>
+                                    <span>Frontend Web-Development</span>
+                                    <br>
+                                    React framework, jQuery
                                 </li>
                                 <li>
                                     <span>Backend Web-Development</span>
                                     <br>
-                                    Using Python Django framework, REST API, AJAX
-                                </li>
-                                <li>
-                                    <span>Frontend Web-Development</span>
-                                    <br>
-                                    Using React framework, jQuery
+                                    Python Django framework, REST API, AJAX
                                 </li>
                                 <li>
                                     <span>Database knowledge</span>
@@ -93,14 +119,9 @@
                         <div class="tab-contents" id="experiences">
                             <ul>
                                 <li>
-                                    <span>2021</span>
+                                    <span>2023</span>
                                     <br>
-                                    Web Design training at Broadway Infosys
-                                </li>
-                                <li>
-                                    <span>2021</span>
-                                    <br>
-                                    Python Django training at Broadway Infosys
+                                    Python Django intern at Niraksa Innovation
                                 </li>
                                 <li>
                                     <span>2022</span>
@@ -108,10 +129,18 @@
                                     React training at Broadway Infosys
                                 </li>
                                 <li>
-                                    <span>2023</span>
+                                    <span>2021</span>
                                     <br>
-                                    Python Django intern at Niraksa Innovation
+                                    Python Django training at Broadway Infosys
                                 </li>
+                                <li>
+                                    <span>2021</span>
+                                    <br>
+                                    Web Design training at Broadway Infosys
+                                </li>
+ 
+ 
+ 
 
                             </ul>
                         </div>
@@ -146,21 +175,22 @@
  
                     </div>
                     <div>
+                        <i class="fa-brands fa-react"></i>
+                        <h2>Frontend-React</h2>
+                        <p>
+                            hhhhfg In front-end development, I specialize in user interfaces using modern frameworks such as ReactJS.  My proficiency in HTML5, CSS3, Bootstrap and JavaScript allows me to create responsive and visually appealing web applications that adapt seamlessly to various devices and screen size.
+                        </p>
+ 
+                    </div>
+                    <div>
                         <i class="fa-brands fa-python"></i>
-                        <h2>Backend-Python</h2>
+                        <h2>Backend-Django</h2>
                         <p>
                             On the back-end, I am proficient in building scalable and efficient server-side applications using technologies like Python Django. I have experience designing and implementing RESTful APIs, database management systems (SQL and NoSQL), and handling server-side logic.
                         </p>
  
                     </div>
-                    <div>
-                        <i class="fa-brands fa-react"></i>
-                        <h2>Frontend-React</h2>
-                        <p>
-                            In front-end development, I specialize in user interfaces using modern frameworks such as ReactJS.  My proficiency in HTML5, CSS3, Bootstrap and JavaScript allows me to create responsive and visually appealing web applications that adapt seamlessly to various devices and screen size.
-                        </p>
  
-                    </div>
                 </div>
             </div>
         </div>
@@ -169,7 +199,7 @@
         <!-- portfolio-start -->
         <div id="portfolio">
             <div class="container">
-                <h1 class="sub-title">My Latest projects</h1>
+                <h1 class="sub-title">My Latest Projects</h1>
                 <div class="work-list">
                     <div class="work">
                         <img src="images/work-1.png" alt="">
@@ -178,7 +208,7 @@
                             <p>
                                 This Ecommerce project includes cart, order, checkout, user-profile, categorized by pricing, top-wear, bottom-wear, reset password etc.
                             </p>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/dmr31-coding" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="work">
@@ -186,9 +216,9 @@
                         <div class="layer">
                             <h3>CRM</h3>
                             <p>
-                                This swimming CRM includes khalti payment integration, enquiry, subscription plan, pricing, compare features, services, gallery, real time notifications and messages etc.
+                                This swimming CRM includes khalti payment integration, enquiry, subscription plan, pricing, real time notifications, messages
                             </p>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/dmr31-coding" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="work">
@@ -198,11 +228,12 @@
                             <p>
                                 This project includes product CRUD, order, staff management, profile, customer registration, login/logout, change/reset password etc.
                             </p>
-                            <a href=""><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/dmr31-coding" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
+ 
                 </div>
-                <a href="#" class="btn">See More</a>
+                <a href="https://github.com/dmr31-coding" target="_blank" class="btn">See More</a>
             </div>
         </div>
         <!-- portfolio-end -->
@@ -221,24 +252,28 @@
                         </p>
                         <div class="social-icons">
  
-                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.facebook.com/dineshmagar3131pm" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/dinesh-magar3131pm/"
+                               target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/dmr31-coding" target="_blank"><i class="fa-brands fa-github"></i></a>
                         </div>
                         <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
                     </div>
                     <div class="contact-right">
-                        <form action="">
+                        <form action="" name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Enter Your Name" required>
-                            <input type="tel"
-                                   name="Phone"
-                                   placeholder="Enter Your Phone number"
-                                   required>
+                            <!-- <input type="tel"
+        name="Phone"
+        placeholder="Enter Your Phone number"
+        required> -->
                             <input type="email"
                                    name="Email"
                                    placeholder="Enter Your Email address"
                                    required>
-                            <textarea name="Message" rows="6" placeholder="Write Your Message in short"></textarea>
+                            <textarea style="resize: none"
+                                      name="Message"
+                                      rows="6"
+                                      placeholder="Write Your Message in short"></textarea>
                             <button type="submit" class="btn btn2">Submit</button>
                         </form>
                         <span id="msg"></span>
@@ -246,13 +281,35 @@
 
                 </div>
             </div>
+ 
+ 
+        </div>
+ 
+ 
+        <!-- contact-end -->
+        <div class="footer">
             <div class="copyright">
                 <p>
-                    Copyright <i class="fa-solid fa-copyright"></i> 2024, Dinesh. All Rights Reserved.
+                    Copyright <i class="fa-solid fa-copyright"></i> 2023, Dinesh. All Rights Reserved.
                 </p>
             </div>
         </div>
-        <!-- contact-end -->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
         <script>
             var tablinks = document.getElementsByClassName("tab-links");
             var tabcontents = document.getElementsByClassName("tab-contents");
@@ -279,6 +336,45 @@
             function closemenu() {
                 sidemenu.style.right = '-200px';
             }
+        </script>
+
+        <script>
+            let nav = document.querySelector('nav')
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const navLinks = document.querySelectorAll('.nav-link');
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        link.classList.add('active');
+                    });
+                });
+            });
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxBqYxObWY9mr55MQnw4uYrB60OW_95gBsIUb8wNjUevZOuy6VH9kzNl8sHUzKFEz8OmA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully."
+                        setTimeout(function() {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
         </script>
  
     </body>
